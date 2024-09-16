@@ -1,0 +1,80 @@
+
+#include <stdio.h>
+#include <stdlib.h>
+
+
+struct Hospital{
+	char name[50];
+	char city[50];
+	int beds;
+	float price;
+	float rating;
+	int reviews;
+};
+
+struct Patient{
+	char name[50];
+	int age;
+
+};
+int main() {
+
+	int choice;
+
+	struct Hospital hospitals[5]= { { "Can","Istanbul",100,250.0,4.5,100},
+			{"Balkan","Ankara",150,200.0,4.2,80},
+			{"Balbadem","Istanbul",200,180.0,4.0,120},
+			{"Edikol","Izmir",80,300.0,4.8,90},
+			{"Mekol","Ankara",120,220.0,4.6,110}
+	};
+//hastanedeki hastalarimiz
+	struct Patient[5][3] = { { {"Osman",35},{"Hakan",45},{"Elif",28} },
+			{ {"Can",35},{"Kerem",45},{"Mazlum",28} },
+			{ {"Zafer",35},{"Melis",45},{"Fulya",28} },
+			{ {"Mert",35},{"Asli",45},{"Beyza",28} },
+			{ {"Ada",35},{"Celil",45},{"Ozan",28} },};
+
+	do{
+	printf("\n\n\n***************Hastane Yönetim Sistemi ***************\n\n\n");
+	printf("1. Hastane Bilgilerini Bastir\n");
+	printf("2. Hasta Bilgilerini Bastir\n");
+	printf("3. Hastaneleri Gunluk Kalma Ucretine Gore Sirala\n");
+	printf("4. Hastaneleri Yatak Sayisina Gore Sirala\n");
+	printf("5. Hastaneleri Adina Gore Sirala\n");
+	printf("6. Hastaneleri Puanina ve Yorum Sayisina Gore Sirala\n");
+	printf("7. Girilen Sehirdeki Hastaneleri Bastir\n");
+	printf("8. Cikis Yap\n");
+
+
+	printf("Seciminizi Yapiniz\n");
+	scanf("%d",&choice);
+
+	switch(choice{
+	case 1 :break;
+	case 2 :break;
+	case 3 :break;
+	case 4 :break;
+	case 5 :break;
+	case 6 :break;
+	case 7 :break;
+	case 8 :
+		printf("Programimiz sonlandi");
+		break;
+
+	})
+	} while(choice != 8)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

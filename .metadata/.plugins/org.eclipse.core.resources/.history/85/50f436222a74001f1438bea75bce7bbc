@@ -1,0 +1,82 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+struct employee{
+	char name[20];
+	int code;
+	char job[20];
+	int exp;
+	int age;
+
+};
+
+struct employee emp[20];
+int num,max;
+
+void build(){
+	int i;
+	printf("Maksimum calisan sayisi : %d\n",max);
+	printf("Lutfen calisan sayisini giriniz\n");
+	scanf("%d",&num);
+
+	if(num>20){
+		printf("Maksimum calisan sayisini astiniz. Calisan sayisi maksimum %d olabilir\n",max);
+		num=max;
+	}
+
+	printf("Lutfen calisan bilgilerini giriniz\n");
+	for(i=0;i<num;i++){
+		printf("%d. calisan bilgileribi giriniz\n",i+1);
+		printf("Ad :");
+		scanf("%s",&emp[i].name);
+		printf("Calisan Id:");
+		scanf("%s",&emp[i].code);
+		printf("Meslek:");
+		scanf("%s",&emp[i].job);
+		printf("Tecrube :");
+		scanf("%d",&emp[i].exp);
+		printf("Yas :");
+		scanf("%d", &emp[i].age);
+		printf("\n");
+	}
+
+
+}
+
+void showMenu(){
+
+	int option;
+
+	printf("\n\n---------------Calisan Yonetim Sistemi---------------\n\n");
+	printf("Islem Seciniz\n");
+	printf("Calisan tablosu olusturunuz(1)\n");
+	printf("Yeni calisan ekleyiniz(2\n");
+	printf("Calisan siliniz(3)\n");
+	printf("Calisan bilgilerini getiririniz (4) \n");
+	printf("Cikis yapiniz (5)\n");
+	scanf("%d",&option);
+
+	if(option == 1){
+		build();
+
+	}else if(option == 2){
+
+	}else if(option == 3){
+
+	}else if(option == 4){
+
+	}else if(option == 5){
+		return;
+	}else{
+		printf("Yanlis bir secim yapiniz");
+		showMenu();
+	}
+}
+
+int main() {
+
+	showMenu();
+	return 0;
+
+
+}

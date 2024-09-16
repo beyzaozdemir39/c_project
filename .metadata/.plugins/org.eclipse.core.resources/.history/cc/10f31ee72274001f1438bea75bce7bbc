@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void showMenu(){
+
+	int option;
+
+	printf("\n\n---------------Calisan Yonetim Sistemi---------------\n\n");
+	printf("Islem Seciniz\n");
+	printf("Calisan tablosu olusturunuz(1)\n");
+	printf("Yeni calisan ekleyiniz(2\n");
+	printf("Calisan siliniz(3)\n");
+	printf("Calisan bilgilerini getiririniz (4) \n");
+	printf("Cikis yapiniz (5)\n");
+	scanf("%d",&option);
+
+	if(option == 1){
+
+	}else if(option == 2){
+
+	}else if(option == 3){
+
+	}else if(option == 4){
+
+	}else if(option == 5){
+		return;
+	}else{
+		printf("Yanlis bir secim yapiniz");
+		showMenu();
+	}
+}
+
+int main() {
+
+
+}

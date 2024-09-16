@@ -1,0 +1,49 @@
+//kütüphane yönetim sistemi
+
+#include <stdio.h>
+#include <stdlib.h>
+
+struct library{
+	char book_name[20];
+	char author[20];
+	int pages;
+	float price;
+};
+
+int main() {
+
+	struct library lib[100];
+	int input;
+
+	while(input != 5){
+		printf("\n\n******######Kutuphane Yonetim Sistemi######******\n\n\n");
+			printf("1. Kitap Bilgisi Ekleyiniz \n");
+			printf("2. Kitap Bilgilerini Goster \n");
+			printf("3.Yazara Ait Tum Kitaplaro Listeşe \n");
+			printf("4. Kutuphanedeki Toplam Kitap Sayisini Goster \n");
+			printf("5. Cikis \n");
+
+
+			printf("\nLutfen seciminizi yapiniz ");
+			scanf("%d", &input);
+
+
+			switch(input){
+			case 1:
+				break;
+			case 2:
+				break;
+			case 3:
+				break;
+			case 4:
+				break;
+			case 5:
+				exit(0);
+			}
+
+	}
+
+
+
+
+}
